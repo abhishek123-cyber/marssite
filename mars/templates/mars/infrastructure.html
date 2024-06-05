@@ -1,0 +1,84 @@
+{% extends "mars/home.html" %}
+{% load static %}
+{% block content %}
+<link rel="stylesheet" href="{% static 'mars/infrastructure.css' %}">
+
+
+
+<div class="  container justify-content-center align-items-center">
+
+
+    <!---->
+    
+
+
+    <!---->
+
+   
+    <div class="container_infra">
+        <h2 class="center infra-title">INFRASTRUCTURE</h2>
+        <hr class="separator1">
+        {% for infra in infrastructure %}
+        <div class="episode">
+            <div class="episode__content "> 
+                <div class="title">
+                    <p>{{infra.tittle}}</p>
+                    <p>{{infra.model_name}}</p>
+                    <img src="{{ infra.image.url }}">
+                </div>
+                <div class="story">
+                    {{infra.features}}
+                </div>
+            </div>
+        </div>
+        {% endfor %}
+
+        
+       
+        
+     
+        
+        
+    </div>
+    <div class="container-tools  ">
+        <h2 class="center">Architectural Tools and Simulators </h2>
+
+        <div class=" d-flex justify-content-center align-items-center">
+
+       
+        <div class="tool-box">
+            <div class="tool-content">
+                <p>Gem5</p>
+            </div>
+        </div>
+
+        <div class="tool-box">
+            <div class="tool-content">
+                <p>MulTI2SIM 5.0 </p>
+            </div>
+        </div>
+
+        <div class="tool-box">
+            <div class="tool-content">
+                <p>BOOKSIM 2.0 </p>
+            </div>
+        </div>
+
+        <div class="tool-box">
+            <div class="tool-content">
+                <p>CACTI 1.0.3 </p>
+            </div>
+        </div>
+
+        <div class="tool-box">
+            <div class="tool-content">
+                <p>ORION 3.0 </p>
+            </div>
+        </div>
+         </div>
+    </div>
+</div>
+
+
+
+{% endblock content %}

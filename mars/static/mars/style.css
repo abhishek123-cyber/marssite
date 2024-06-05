@@ -1,0 +1,214 @@
+body {
+    margin: 0 auto;
+    /* Center the body horizontally */
+    min-height: 100%;
+    flex-direction: column;
+   
+
+    
+    /* Set a maximum width */
+    box-sizing: border-box;
+    /* Include padding and border in total width */
+    
+    font-family: 'Forum';
+  
+   
+    transition: background-color 0.3s, color 0.3s;
+}
+
+
+.container {
+    width: 70rem; /* Fixed width for larger screens */
+    margin: auto; /* Center the container */
+    max-width: 100%; /* Ensures the container doesn't exceed the viewport width */
+}
+
+/* Media query for mobile devices */
+@media (max-width: 768px) {
+    .container {
+        width: 100%; /* Full width on smaller screens */
+        padding: 0 15px; /* Add some padding on smaller screens */
+    }
+}
+
+
+/* Navbar item hover effect */
+.navbar-nav .nav-item .nav-link:hover {
+    background-color: #6F8F72; /* Change to your desired hover color */
+    border-radius: 5px;
+}
+
+/* Active menu item */
+.active-menu {
+    background-color: #6F8F72; /* Change to your desired active item color */
+    border-radius: 5px;
+}
+
+
+html{
+    height: 100%;
+    scroll-behavior: smooth;
+}
+
+.scroll-link {
+    display: block;
+    margin-top: 20px;
+    /* Adjust as needed */
+    text-decoration: none;
+    color: #ffffff;
+    /* Adjust link color as needed */
+    cursor: pointer;
+    margin-bottom: 100px;
+    margin-left: 20px
+}
+
+/* Add smooth scrolling behavior */
+
+.marquee {
+    margin: auto;
+    margin-top: 140px;
+    width: 70%; /* Full width of the container */
+    overflow: hidden; /* Hide the part of content that overflows */
+    box-sizing: border-box;
+}
+
+.marquee-content {
+    display: inline-block;
+    white-space: nowrap; /* Ensure the text is in one line */
+    padding-left: 100%; /* Space before the text starts scrolling */
+    animation: marquee 15s linear infinite; /* Adjust time for speed */
+}
+
+@keyframes marquee {
+    from {
+        transform: translateX(0);
+    }
+    to {
+        transform: translateX(-100%);
+    }
+}
+
+
+
+.custom-carousel {
+    width: 80%; /* Adjust the width as needed */
+    margin: auto; /* This will center the carousel horizontally */
+}
+/* carousal css*/
+.custom-carousel .carousel-item img {
+    width: 100%;        /* Ensures the image takes the full width of the container */
+    height: 100%;       /* Ensures the image takes the full height of the container */
+    object-fit: cover;  /* Ensures the image covers the area without stretching */
+    object-position: center; /* Adjusts the position of the image within its container */
+  }
+  
+
+.custom-carousel .carousel-item {
+    max-height: 400px; /* Adjust this value to your preference */
+    overflow: hidden;
+    width:100% ;
+  }
+
+  
+  
+  .custom-carousel .carousel-item img {
+    width:100%;
+    object-fit: cover; /* This will ensure the images cover the area without stretching */
+  }
+  
+
+
+.main-heading {
+    margin-top: 10px;
+    color: #A73121;
+    font-weight: 700;
+}
+
+ /* ***************************************************************************  */
+/* Default styles for medium-sized screens and above (col-md-4) */
+.side-news {
+    background-color: #ffffff; /* Set background color */
+    padding: 20px; /* Add padding to the container */
+    border-radius: 10px; /* Add border-radius for rounded corners */
+  }
+  
+  .news_new {
+    color: #A73121; /* Set color for 'News' heading */
+    margin-top: 20px; /* Adjust margin for spacing */
+    font-weight: 500;
+    size: 50px;
+  }
+  
+  .running-news-container {
+    margin-top: 20px; /* Adjust margin for spacing */
+  }
+  
+  .side-news-body {
+    background-color: #F2F1EB; /* Set background color for news body */
+    padding: 10px; /* Add padding to the news body */
+    border-radius: 5px; /* Add border-radius for rounded corners */
+  }
+  
+  .news-set {
+    margin-bottom: 10px; /* Add bottom margin for spacing between news sets */
+  }
+  
+  /* Responsive styles for smaller screens */
+  @media (max-width: 767px) {
+    .side-news {
+      width: 100%; /* Make the column take the full width on small screens */
+      margin-bottom: 20px; /* Add some bottom margin for spacing */
+    }
+  
+    .news_new {
+      margin-top: 10px;
+    }
+}
+/*======== COLORS ===========*/
+
+footer{
+    margin-top: auto;
+}
+
+.card-nptel {
+    justify-content: center;
+    width: 500px;
+    height: 200px;
+    background-color: #121212;
+    color: rgb(249, 115, 115);
+    position: relative;
+    overflow: hidden;
+    text-align: center;
+    padding: 20px;
+    box-sizing: border-box;
+    margin-left: 20px;
+   background: url( 'hqdefault.jpg') no-repeat center center; 
+    
+
+  }
+  
+  .card-nptel h5 {
+    margin-top: 0;
+    position: relative;
+    overflow-y: hidden;
+    z-index: 2;
+  }
+  .card-nptel p {
+    margin-top: 0;
+    position: relative;
+    overflow-y: hidden;
+    z-index: 2;
+  }
+  .card-nptel a {
+    margin-top: 0;
+    position: relative;
+    overflow-y: hidden;
+    z-index: 2;
+  }
+  
+  
+  
+ .details{
+    margin-left: 50px;
+ }
+    
